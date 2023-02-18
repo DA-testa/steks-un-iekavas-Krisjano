@@ -20,9 +20,11 @@ def find_mismatch(text):
                 return i +1
             pedejais = opening_brackets_stack.pop()
             
-            if not are_macthing(pedejais[0], next):
+            if not are_matching(pedejais[0], next):
                 return i+1
-            if opening_brackets_stack[0][1] +1
+                
+            if opening_brackets_stack:
+            return opening_brackets_stack[0][1] +1
             return "Success"
 
 def main():
