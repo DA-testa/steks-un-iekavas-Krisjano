@@ -14,7 +14,7 @@ def find_mismatch(text):
     for i, next in enumerate(text):
         if next in "([{":
             opening_brackets_stack.append(Bracket(next_char, i+1))
-            else if next_char in ")]}":
+            elif next_char in ")]}":
                 if not opening_brackets_stack:
                     return i+1
                 pedejais = opening_bracket_stack.pop()
@@ -22,8 +22,7 @@ def find_mismatch(text):
                     return i +1
              if opening_brackets_stack:
                 retrun opening_brackets_stack[0].position
-            else :
-                retrun "Success"
+            else : retrun "Success"
           
 def main():
     text = input()
